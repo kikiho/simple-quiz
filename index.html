@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Kiki's Quiz</title>
+	<link href="style.css" rel ="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+	<script src ="main.js"></script> 
+</head>
+
+<body>
+	<h1>Do you KNOW The Office?</h1>
+	<form id ="quiz" name = "quiz">
+		<p class="questions"> What is Dwight's middle name?</p>
+		<input id = "textbox" type = "text" name = "question1">
+
+		<p class="questions"> What year does Creed claim he was born in?</p>
+		<input type = "radio" id = "mc" name = "question2" value = "1930"> 1930<br>
+		<input type = "radio" id = "mc" name = "question2" value = "1925"> 1925<br>
+		<input type = "radio" id = "mc" name = "question2" value = "1988"> 1988<br>
+
+		<p class="questions"> True/False: Bears eat beets. </p>
+		<input type = "radio" id = "mc" name = "question3" value = "true"> True<br>
+		<input type = "radio" id = "mc" name = "question3" value = "false"> False<br>
+
+		<input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
+
+	</form>
+
+	<div id = "after_submit">
+		<p id = "number_correct"></p>
+		<p id = "message"></p>
+	</div>
+</body>
+</html>
